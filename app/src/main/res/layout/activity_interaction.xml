@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    tools:context=".Interaction.InteractionActivity">
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="کامپوننت های در ارتباط با کاربر:"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:id="@+id/animatedRadioButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="رادیو باتن" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animatedRadioButton"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:lottie_fileName="radio_button.json" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/animatedSwitchButtonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="سوئیچ" />
+
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animatedSwitchButton"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                app:lottie_fileName="switch.json" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/animatedHamburgerContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:text="دکمه منو کشویی" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animatedHamburger"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:scaleX="1.5"
+                android:scaleY="1.5"
+                app:lottie_fileName="hamburger.json" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/animatedMuteContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:gravity="center"
+                android:text="حالت قطع/وصل" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/animatedMute"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_alignParentRight="true"
+                android:scaleX="2"
+                android:scaleY="2"
+                app:lottie_fileName="mute.json" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
